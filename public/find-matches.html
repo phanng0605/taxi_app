@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaxiShare - Find Matches</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>TaxiShare</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </header>
+    <main>
+      <h2>Find Matching Flights</h2>
+      <form id="match-form">
+        <label for="match-flight-date">Date of Flight:</label>
+        <input
+          type="date"
+          id="match-flight-date"
+          name="match-flight-date"
+          required
+        />
+
+        <label for="match-time-start">Time Start:</label>
+        <input
+          type="time"
+          id="match-time-start"
+          name="match-time-start"
+          required
+        />
+
+        <label for="match-time-end">Time End:</label>
+        <input type="time" id="match-time-end" name="match-time-end" required />
+
+        <label for="match-airport">Airport:</label>
+        <input type="text" id="match-airport" name="match-airport" required />
+
+        <button type="submit">Find Matches</button>
+      </form>
+      <section id="matches">
+        <h3>Potential Matches</h3>
+        <ul id="match-list">
+          <!-- Matches will be displayed here -->
+        </ul>
+      </section>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>

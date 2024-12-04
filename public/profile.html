@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaxiShare - Profile</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>TaxiShare</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="find-matches.html">Find Matches</a>
+      </nav>
+    </header>
+    <main>
+      <h2>Profile and Flight Details</h2>
+      <form id="profile-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="flight-date">Date of Flight:</label>
+        <input type="date" id="flight-date" name="flight-date" required />
+
+        <label for="time-start">Time Start:</label>
+        <input type="time" id="time-start" name="time-start" required />
+
+        <label for="time-end">Time End:</label>
+        <input type="time" id="time-end" name="time-end" required />
+
+        <label for="airport">Airport:</label>
+        <input type="text" id="airport" name="airport" required />
+
+        <button type="submit">Save Profile and Flight</button>
+      </form>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>
